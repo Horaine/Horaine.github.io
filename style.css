@@ -1,37 +1,59 @@
-.grid {
-  border: 2px blue solid;
-  width: 750px;
-  height: 1000px;
+.gridd {
   display: grid;
-  grid-template: 300px 700px / 200px 550px;
-  background-color:;
+  grid-template-columns: 1fr 200px 500px 1fr;
+  grid-gap: 4px;
+  grid-template-areas:
+  ". header header ."
+  ". sidebar maincon ."
+  ". sidebar maincon ."
 }
 
-.a {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
+.header {
+  grid-area: header;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: turquoise;
+}
+
+.sidebar {
   background-color: grey;
-  
-
-
-
+  grid-area: sidebar;
 }
 
-
-.box {
+.maincon {
+  grid-area: maincon;
   background-color:;
-  color: black;
-  border-radius: 1px;
-  border: 1px dodgerblue solid;
 }
 
-.b{
-  text-align: center;
-  
+.title {
+  border-radius: 20px;
+  border-color: white; 
 }
 
-.c{
-  text-align: center;
-  background-color:aqua;
+.pic {
+  border-radius: 50% 50% / 50% 50%;
 }
 
+.skills {
+  display: flex;
+}
+
+.unordered {
+  margin-right: 100px;
+}
+
+.para {
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.jobs {
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.school {
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
